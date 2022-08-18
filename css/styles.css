@@ -220,17 +220,17 @@ body {
   background: var(--brand-white);
   padding-bottom: 0;
 }
-.benefits-icon-list {
+.benefits__list {
   display: flex;
   gap: 30px;
   width: calc((100% - 90px) / 4);
 }
-.benefits-icon-item {
+.benefits__item {
   display: block;
   width: 270px;
   height: 248px;
 }
-.benefits-icon {
+.benefits__icon {
   display: flex;
   background-color: #f5f4fa;
   align-items: center;
@@ -240,7 +240,7 @@ body {
   width: 270px;
   height: 120px;
 }
-.benefits-title {
+.benefits__title {
   margin-bottom: 10px;
 
   font-weight: 700;
@@ -250,7 +250,7 @@ body {
   text-transform: uppercase;
   color: var(--brand-black);
 }
-.benefits-list-text {
+.benefits__text {
   width: 270px;
 
   font-size: 14px;
@@ -259,7 +259,7 @@ body {
   color: var(--brand-gray);
 }
 /* ------------------------TASKS--------------------- */
-.tasks-title {
+.tasks__title {
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -269,16 +269,16 @@ body {
   letter-spacing: 0.03em;
   color: var(--brand-black);
 }
-.tasks-list {
+.tasks__list {
   display: flex;
 }
-.tasks-item:not(:last-child) {
+.tasks__item:not(:last-child) {
   margin-right: 30px;
 }
-.tasks-item {
+.tasks__item {
   position: relative;
 }
-.tasks-item-text {
+.tasks__text {
   position: absolute;
   bottom: 0;
 
@@ -301,7 +301,7 @@ body {
 .team {
   background: #f5f4fa;
 }
-.team-title {
+.team__title {
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -311,11 +311,11 @@ body {
   letter-spacing: 0.03em;
   color: var(--brand-black);
 }
-.team-list {
+.team__list {
   display: flex;
   column-gap: 30px;
 }
-.team-item {
+.team__item {
   width: calc((100% - 30px) / 4);
 
   text-align: center;
@@ -323,10 +323,10 @@ body {
   box-shadow: var(--box-shadow);
   border-radius: 0px 0px 4px 4px;
 }
-.team-card-description {
+.card {
   padding: 30px;
 }
-.team-item-name {
+.card__name {
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -336,7 +336,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--brand-black);
 }
-.team-item-text {
+.card__text {
   margin-bottom: 16px;
 
   font-size: 16px;
@@ -345,12 +345,12 @@ body {
   letter-spacing: 0.03em;
   color: var(--brand-gray);
 }
-.team-icon-list {
+.card__list {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
-.team-contact-link {
+.card__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -362,13 +362,13 @@ body {
 
   transition: background-color var(--animation), fill var(--animation);
 }
-.team-contact-link:hover,
-.team-contact-link:focus {
+.card__link:hover,
+.card__:focus {
   background-color: var(--brand-blue);
   fill: var(--brand-white);
 }
 /* ----------------------------CLIENTS----------------------- */
-.clients-title {
+.clients__title {
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -378,11 +378,11 @@ body {
   letter-spacing: 0.03em;
   color: var(--brand-black);
 }
-.clients-list {
+.clients__list {
   display: flex;
   gap: 30px;
 }
-.clients-link {
+.clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -395,8 +395,8 @@ body {
 
   transition: fill var(--animation), border-color var(--animation);
 }
-.clients-link:hover,
-.clients-link:focus {
+.clients__link:hover,
+.clients__link:focus {
   fill: var(--brand-blue);
   border-color: var(--brand-blue);
 }
@@ -411,7 +411,7 @@ body {
   gap: 70px;
   align-items: baseline;
 }
-.logo-white {
+.logo--white {
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
@@ -422,40 +422,36 @@ body {
   display: block;
   margin-bottom: 20px;
 }
-.footer-address-link {
+.address__item {
+  margin-bottom: 9px;
   font-style: normal;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
+}
+.address__item:last-child {
+  margin-bottom: 0;
+}
+.address__link {
   color: var(--brand-white);
 
   transition: color var(--animation);
 }
-.footer-contacts-link {
-  font-style: normal;
-  font-size: 14px;
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
+.contact__link {
   color: rgba(255, 255, 255, 0.6);
 
   transition: color var(--animation);
 }
-.footer-item {
-  margin-bottom: 9px;
-}
-.footer-item:last-child {
-  margin-bottom: 0;
-}
-.footer-contacts-link:hover,
-.footer-contacts-link:focus,
-.footer-address-link:hover,
-.footer-address-link:focus {
+.contact__link:hover,
+.contact__link:focus,
+.address__link:hover,
+.address__link:focus {
   color: var(--brand-blue);
 }
-.enjoy-us-container {
+.follow-us-container {
   padding: 0;
 }
-.footer-title {
+.follow-us__title {
   margin-bottom: 20px;
 
   font-weight: 700;
@@ -465,11 +461,11 @@ body {
   text-transform: uppercase;
   color: var(--brand-white);
 }
-.footer-media-list {
+.networks__list {
   display: flex;
   gap: 10px;
 }
-.footer-media-link {
+.networks__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -481,15 +477,15 @@ body {
   border-radius: 50%;
   transition: background-color var(--animation);
 }
-.footer-media-link:hover,
-.footer-media-link:focus {
+.networks__link:hover,
+.networks__link:focus {
   background-color: var(--brand-blue);
 }
-.footer-subscribe {
+.subscribe {
   display: flex;
   gap: 12px;
 }
-.subscribe-title {
+.subscribe__title {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 14px;
@@ -498,7 +494,7 @@ body {
   text-transform: uppercase;
   color: var(--brand-white);
 }
-.footer-subscribe-field {
+.subscribe__field {
   width: 358px;
   height: 50px;
   padding: 15px 16px;
@@ -517,10 +513,10 @@ body {
 
   transition: border-color var(--animation);
 }
-.footer-subscribe-field:focus {
+.subscribe__field:focus {
   border-color: var(--brand-blue);
 }
-.footer-submit-btn {
+.subscribe__btn {
   display: flex;
   align-items: center;
   text-align: center;
@@ -539,18 +535,18 @@ body {
   border-radius: 4px;
   transition: background var(--animation);
 }
-.footer-submit-btn:hover,
-.footer-submit-btn:focus {
+.subscribe__btn:hover,
+.subscribe__btn:focus {
   background: var(--main-btn-hover);
 }
 /* ------------------------PORTFOLIO--------------------- */
-.portfolio-sections-list {
+.branches__list {
   display: flex;
   justify-content: center;
   column-gap: 8px;
   margin-bottom: 50px;
 }
-.sections-btn {
+.branches__btn {
   padding: 6px 22px;
 
   font-family: "Roboto", sans-serif;
@@ -569,26 +565,26 @@ body {
   transition: color var(--animation), background var(--animation),
     box-shadow var(--animation);
 }
-.sections-btn:hover,
-.sections-btn:focus {
+.branches__btn:hover,
+.branches__btn:focus {
   color: var(--brand-white);
   background: var(--brand-blue);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.portfolio-examples-list {
+.examples__list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
-.portfolio-examples-item {
+.examples__item {
   width: calc((100% - 60px) / 3);
 }
-.portfolio-card-overlay {
+.card-overlay {
   position: relative;
   overflow: hidden;
 }
-.card-overlay-text {
+.card-overlay__text {
   position: absolute;
   top: 0;
   left: 0;
@@ -611,18 +607,18 @@ body {
   transform: translateY(100%);
   transition: transform var(--animation), opacity var(--animation);
 }
-.portfolio-card-link:hover .card-overlay-text,
-.portfolio-card-link:focus .card-overlay-text {
+.examples__link:hover .card-overlay__text,
+.examples__link:focus .card-overlay__text {
   opacity: 1;
   bottom: 100%;
   transform: translateY(0);
 }
-.portfolio-card-link {
+.examples__link {
   display: block;
   transition: box-shadow var(--animation);
 }
-.portfolio-card-link:hover,
-.portfolio-card-link:focus {
+.examples__link:hover,
+.examples__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -633,7 +629,7 @@ body {
   border: 1px solid #eeeeee;
   border-top: 0;
 }
-.portfolio-examples-text {
+.examples__text {
   margin-bottom: 4px;
 
   font-weight: 700;
@@ -642,7 +638,7 @@ body {
   letter-spacing: 0.06em;
   color: var(--brand-black);
 }
-.portfolio-examples-name {
+.examples__name {
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
