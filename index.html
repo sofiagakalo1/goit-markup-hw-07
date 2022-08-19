@@ -5,20 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
-    />
-    <link
+    /> -->
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
       integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
+    /> -->
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
@@ -30,10 +31,16 @@
         <nav class="navigation">
           <ul class="navigation__list list">
             <li class="navigation__item">
-              <a href="./index.html" class="navigation__link link navigation__link--current">Студія</a>
+              <a
+                href="./index.html"
+                class="navigation__link link navigation__link--current"
+                >Студія</a
+              >
             </li>
             <li class="navigation__item">
-              <a href="./portfolio.html" class="navigation__link link">Портфоліо</a>
+              <a href="./portfolio.html" class="navigation__link link"
+                >Портфоліо</a
+              >
             </li>
             <li class="navigation__item">
               <a href="" class="navigation__link link">Контакти</a>
@@ -43,10 +50,7 @@
         <div class="header-contacts">
           <ul class="contacts__list list">
             <li class="contacts__item">
-              <a
-                href="mailto:info@devstudio.com"
-                class="contacts__link link"
-              >
+              <a href="mailto:info@devstudio.com" class="contacts__link link">
                 <svg class="mail-icon" width="16" height="12">
                   <use href="./images/icons.svg#icon-envelope"></use>
                 </svg>
@@ -406,9 +410,7 @@
                 >
               </li>
               <li class="address__item">
-                <a
-                  href="mailto:info@devstudio.com"
-                  class="contact__link link"
+                <a href="mailto:info@devstudio.com" class="contact__link link"
                   >info@devstudio.com</a
                 >
               </li>
@@ -464,7 +466,7 @@
                 placeholder="E-mail"
               />
             </label>
-            <button type="submit" class="footer-submit-btn">
+            <button type="submit" class="subscribe-btn">
               Підписатися
               <svg width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
